@@ -64,6 +64,7 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Reference Data" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Customer.sql" />
@@ -76,5 +77,10 @@
   <ItemGroup>
     <None Include="ACM2.Database.local.publish.xml" />
     <None Include="ACM2.Database.test.publish.xml" />
+    <None Include="Reference Data\CustomerType.data.sql" />
+    <None Include="Reference Data\CustomerType.merge.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Reference Data\Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>
